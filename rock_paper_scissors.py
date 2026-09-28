@@ -1,6 +1,7 @@
 import random
 import time
 
+print("Welcome to the Rock, Paper, Scissors game!")
 
 def play_game():
  #countdown
@@ -41,18 +42,17 @@ def play_game():
         print(f"You lose! {computer_choice} beats {player_choice}.")
 
 def main():
-    print("Welcome to the Rock, Paper, Scissors game!")
     player_decision = input("Do you want to proceed? (yes/no): ").lower() 
 
     if player_decision == 'no':
-        print("Goodbye!!")
+        print("Goodbye 👋🏽!!")
         return
     elif player_decision == 'yes':
         print("Let's play!!!")
         
     else:
         print("Invalid input. Please enter 'yes' or 'no'.")
-        main()
+        return
             
     
     while True:
@@ -68,8 +68,6 @@ def main():
             print("Invalid input. Please enter 'yes' or 'no'.")
             break
 
-   
-    #main()
 
 if __name__ == '__main__':
     main()
